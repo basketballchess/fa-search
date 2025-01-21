@@ -27,7 +27,7 @@ st.sidebar.header("Filter Options")
 
 if tab == "Scenes Table":
     column_to_filter = st.sidebar.selectbox("Select Column to Filter",scenes_df.columns)
-    filter_string = st.sidebar.text_input("Enter Substring to Search", "")
+    filter_string = st.sidebar.text_input("Enter keyword to Search", "")
     filtered_df = filter_data(scenes_df, column_to_filter, filter_string)
     
     # Sort settings
